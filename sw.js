@@ -2,7 +2,7 @@ const CACHE_NAME = 'cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
-  '/styles.css',
+  '/style.css',
   '/script.js',
   '/public/images/pizzaBacon.png',
   '/public/images/pizzaBanner.jpg',
