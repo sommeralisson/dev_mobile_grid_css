@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo de Produtos</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
   <div>
@@ -93,5 +94,19 @@
   </div>
 
   <script src="./script.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('Service Worker registrado com sucesso:', registration);
+          })
+          .catch(error => {
+            console.log('Registro do Service Worker falhou:', error);
+          });
+      });
+    }
+  </script>
 </body>
 </html>
