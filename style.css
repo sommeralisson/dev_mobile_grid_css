@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+}
+
+.search input {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.search button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background-color: #eee;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+nav#menu {
+  width: 100%;
+  justify-items: end;
+}
+
+nav#menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav#menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.banner {
+  height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+  width: 100%;
+}
+
+.produto {
+  background-color: #f9f9f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.produto img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: #ccc;
+  object-fit: cover;
+}
+
+.produto h2 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.produto p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+footer .info-empresa {
+  line-height: 1.5;
+}
+
+footer .contato {
+  font-weight: bold;
+}
+
+footer .redes-sociais {
+  width: 10rem;
+  display: grid;
+  justify-content: end;
+  justify-items: end;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .redes-sociais span {
+  background-color: #999;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  nav#menu {
+    display: none;
+  }
+
+  nav#menu.active {
+    display: block;
+    margin-top: 10px;
+  }
+
+  nav#menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
