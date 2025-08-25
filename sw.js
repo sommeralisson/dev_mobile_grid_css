@@ -1,18 +1,19 @@
 const CACHE_NAME = 'cache-v1';
 const urlsToCache = [
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/public/images/pizzaBacon.png',
-  '/public/images/pizzaBanner.jpg',
-  '/public/images/pizzaBrocolis.png',
-  '/public/images/pizzaCalabresa.png',
-  '/public/images/pizzaCarne.png',
-  '/public/images/pizzaChocolate.png',
-  '/public/images/pizzaFrango.png',
-  '/public/images/pizzaLogo.webp',
-  '/public/images/pizzaPepperoni.png',
-  '/public/images/pizzaQueijo.png',
+  'dev_mobile_grid_css/',
+  'dev_mobile_grid_css/index.html',
+  'dev_mobile_grid_css/style.css',
+  'dev_mobile_grid_css/script.js',
+  'dev_mobile_grid_css/public/images/pizzaBacon.png',
+  'dev_mobile_grid_css/public/images/pizzaBanner.jpg',
+  'dev_mobile_grid_css/public/images/pizzaBrocolis.png',
+  'dev_mobile_grid_css/public/images/pizzaCalabresa.png',
+  'dev_mobile_grid_css/public/images/pizzaCarne.png',
+  'dev_mobile_grid_css/public/images/pizzaChocolate.png',
+  'dev_mobile_grid_css/public/images/pizzaFrango.png',
+  'dev_mobile_grid_css/public/images/pizzaLogo.webp',
+  'dev_mobile_grid_css/public/images/pizzaPepperoni.png',
+  'dev_mobile_grid_css/public/images/pizzaQueijo.png',
 ];
 
 self.addEventListener('install', event => {
