@@ -1,6 +1,5 @@
 const CACHE_NAME = 'cache-v1';
 const urlsToCache = [
-  '/',
   '/index.html',
   '/style.css',
   '/script.js',
