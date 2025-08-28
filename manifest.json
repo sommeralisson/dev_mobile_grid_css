@@ -2,7 +2,7 @@
   "name": "Grid CSS App",
   "short_name": "GC App",
   "description": "Uma aplicação utilizando grid css e pwa",
-  "start_url": "/",
+  "start_url": "/dev_mobile_grid_css/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2196F3",
